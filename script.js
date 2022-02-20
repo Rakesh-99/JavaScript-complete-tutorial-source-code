@@ -2201,10 +2201,10 @@ class person {
   };
 
 
-  // Defining Stsic Variables 
+  // Defining Static Variables 
 
 
-  static sName  = "Rakesh Kumar Paida(Static variable)";
+  static sName  = "Rakesh Kumar Paida  (Static variable)";
 
   
 
@@ -2345,7 +2345,7 @@ console.log(std1.fetchPvtMethod());
 
 
 
-                        //           MIXIN IN ECMA SCRIPT 6
+                                                          //  MIXIN IN ECMA SCRIPT 6
 
 
 
@@ -2383,8 +2383,241 @@ console.log(std1.fetchPvtMethod());
   */
 
 
-  for(let i = 0; i <=10; i++){
-    setTimeout(function(){
-      console.log("Hello");
-    },100);
-  }
+                                               // CallBack function 
+          
+
+/*
+function add(a, b) {
+  return a + b;
+};
+
+function b(val1, val2) {
+  return val1 - val2;
+};
+
+
+function disp(callback, a, b) {
+        return callback(a,b);
+};
+
+console.log(disp(b, 2, 5));
+*/
+
+
+
+                                         // multiplying each Element of an array using for loop 
+              
+  
+  /*
+    let arr1 = [1, 2, 3, 4, 5, 6, 7];
+
+    let arr2 = [];
+
+    for (let i = 0; i < arr1.length; i++) {
+      arr2[i] = arr1[i] * 2;
+    }
+    console.log(arr2);
+                
+         */       
+
+
+
+                                       // multiplying each Element of an array using map() method
+              
+              
+              
+ /*             
+let arr1 = [2, 4, 8, 10, 12];
+
+
+let arr2 = arr1.map(function(value){
+  return value * 2;
+})
+      console.log(arr2);          
+    */
+
+
+
+
+
+
+
+                                                  // Array All method in JavaScript 
+
+                                                  
+                                                  
+/*
+
+1. foreach();
+2.includes();
+3. filter();
+4.map();
+5.reduce();
+6.some();
+7.every();
+8.sort();
+9.array.from();
+10.array.of();
+
+*/
+
+
+
+
+                                                       // 1. foreach(); 
+
+                                           // foreach method helps us to loop over array's item 
+
+                      
+/*
+const arr = [1, 2, 3, 4, 5];
+arr.forEach((value) => console.log(value));
+*/
+
+
+
+                                                     //2.   includes();
+
+
+            
+            
+// includes(); method checks if the specified element passed in function present in Array or not 
+
+/*
+const arr = [1, 2, 3, 4, 5];
+const arr2 = arr.includes(2);
+console.log(arr2);
+*/
+
+
+                                                        //3. filter();
+                                                        
+                                                        
+                                     
+                                  
+                          
+                          
+// Fiilter method basically used to filter the values inside an Array. It creates a new Array and store the values according to the conditions .
+
+
+
+                                                    //   Q1. find the odd number inside an array 
+      
+      
+
+      /*
+let arr1 = [1, 2, 3, 4, 5, 6, 7];
+let arr2 = arr1.filter(function (values) {
+  return values % 2 === 1;
+});
+console.log(arr1);
+console.log(arr2);
+*/
+
+
+                                                  //   Q2.Find the even number inside an Array 
+      
+      
+      
+ /*     
+let val1 = [20, 40, 33, 55, 75, 31, 98];
+let val2 = val1.filter(function (getValues) {
+    return getValues % 2 === 0;
+
+});
+console.log(`The origional array is ${val1}`);
+console.log(`The transformation array is ${val2}`);
+*/
+
+
+
+
+                                        //  Q.3    Find the numbers in Array which are greater than 10
+              
+              
+              
+ /*   
+const arr1 = [23, 41, 1, 3, 4, 7, 9,11,13];
+
+const arr2 = arr1.filter(function (getValues) {
+  return getValues > 5;
+  
+});
+console.log(arr1);
+console.log(arr2);
+
+*/
+
+
+     
+      
+      
+
+
+
+
+                            
+
+                                                     // 4. map(); 
+
+
+                                    
+
+
+                  //  The map () method creates a new array with the results of calling a function for every array element. 
+
+
+
+
+
+                      //    Q1.  Double the value of each element of an array without changing the origional Array value
+  
+                      
+                      
+                      
+  
+/*  
+const arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+function double(x) {
+  return x * 2;
+}
+
+let arr2 = arr.map(double);
+console.log(arr);
+console.log(arr2);
+*/
+
+
+
+
+                          //  Q1.  Triple the value of each element of an array without changing the origional Array value
+
+
+
+/*
+
+const arr1 = [33, 53, 67, 88, 21, 35, 65];
+
+function triple(x) {
+ return x * 3;
+};
+
+let arr2 = arr1.map(triple);
+console.log(arr1);
+console.log(arr2);
+*/
+
+
+
+                                          // Q3.Find the binary of an Array Elements 
+                                          
+                                          
+                                          
+
+/*
+const arr1 = [1, 2, 3, 4, 5, 6];
+const arr2 = arr1.map(binary => binary.toString(2));
+console.log(arr1);
+console.log(arr2);
+*/
